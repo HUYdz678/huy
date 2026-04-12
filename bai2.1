@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Khảo sát ITviec</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #1abc9c;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        .box {
+            width: 400px;
+            margin: auto;
+            background: #eee;
+            padding: 20px;
+            box-shadow: 0 0 10px gray;
+        }
+        input, select, textarea {
+            width: 100%;
+            margin: 8px 0;
+            padding: 8px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #2ecc71;
+            border: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Biểu mẫu khảo sát ITviec</h1>
+
+<div class="box">
+<form>
+    Họ tên
+    <input type="text" placeholder="Nhập tên của bạn">
+
+    Email
+    <input type="email" placeholder="Nhập email của bạn">
+
+    Tuổi
+    <input type="number" placeholder="Nhập tuổi">
+
+    Hiện tại bạn đang là?
+    <select>
+        <option>Học sinh/Sinh viên</option>
+        <option>Đi làm</option>
+        <option>Khác</option>
+    </select>
+
+    <p>Bạn sẽ giới thiệu ITviec với bạn bè chứ?</p>
+    <input type="radio" name="gt"> Có<br>
+    <input type="radio" name="gt"> Không<br>
+    <input type="radio" name="gt"> Có thể<br>
+
+    <p>Ngôn ngữ lập trình và Framework bạn đã biết?</p>
+    <input type="checkbox"> C<br>
+    <input type="checkbox"> C++<br>
+    <input type="checkbox"> C#<br>
+
+    <p>Bạn có câu hỏi gì cho ITviec không?</p>
+    <textarea placeholder="Enter your comment here"></textarea>
+
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
+</div>
+
+</body>
+</html>
