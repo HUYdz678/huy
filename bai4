@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Đồng Hồ</title>
+
+    <style>
+        body {
+            max-width: 1200px;
+            margin: auto;
+            background-color: #f5f5f5;
+            font-family: Arial;
+        }
+        .menu {
+            background-color: antiquewhite;
+            line-height: 50px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu ul li {
+            width: 150px;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-weight: bold;
+            color: black;
+        }
+
+        .menu ul li:hover {
+            background-color: blue;
+            color: white;
+        }
+        .tieude {
+            margin: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* DANH SÁCH SẢN PHẨM */
+        .danh_sanpham {
+            display: flex;
+            gap: 10px;
+        }
+        .sanpham {
+            width: calc(25% - 8px);
+            border: 1px solid red;
+            background-color: white;
+            position: relative;
+            text-align: center;
+        }
+
+        .sanpham .anh {
+            height: 300px;
+            padding: 20px;
+            border-bottom: 1px solid red;
+            box-sizing: border-box;
+        }
+
+        .sanpham .anh img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .chitiet {
+            padding: 15px;
+        }
+
+        .ten {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .gia-cu {
+            color: red;
+            text-decoration: line-through;
+            font-size: 20px;
+        }
+
+        .gia-moi {
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nut {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .nut:hover {
+            background-color: darkred;
+        }
+
+        /* GIẢM GIÁ */
+        .giamgia {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+            position: absolute;
+            top: 10px;
+            left: -10px;
+            text-align: center;
+            line-height: 45px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <ul>
+            <li>Trang chủ</li>
+            <li>Giới thiệu</li>
+            <li>Đồng hồ nam</li>
+            <li>Đồng hồ nữ</li>
+            <li>Liên hệ</li>
+            <li>Giỏ hàng</li>
+        </ul>
+    </div>
+
+    <div class="tieude">
+        Sản phẩm bán chạy
+    </div>
+
+    <div class="danh_sanpham">
+
+        <div class="sanpham">
+            <div class="anh">
+                <img src="Screenshot 2026-05-10 090801.png">
+            </div>
+
+            <div class="chitiet">
+                <div class="ten">Classico 01</div>
+
+                <div>
+                    <span class="gia-cu">7000 đ</span>
+                    <span class="gia-moi">5000 đ</span>
+                </div>
+
+                <button class="nut">THÊM VÀO GIỎ</button>
+            </div>
+
+            <div class="giamgia">-29%</div>
+        </div>
+
+        <!-- SẢN PHẨM 2 -->
+        <div class="sanpham">
+            <div class="anh">
+                <img src="Screenshot 2026-05-10 090757.png">
+            </div>
+
+            <div class="chitiet">
+                <div class="ten">Classico 02</div>
+
+                <div>
+                    <span class="gia-cu">7000 đ</span>
+                    <span class="gia-moi">5000 đ</span>
+                </div>
+
+                <button class="nut">THÊM VÀO GIỎ</button>
+            </div>
+
+            <div class="giamgia">-29%</div>
+        </div>
+
+        <div class="sanpham">
+            <div class="anh">
+                <img src="Screenshot 2026-05-10 090754.png">
+            </div>
+
+            <div class="chitiet">
+                <div class="ten">Classico 03</div>
+
+                <div>
+                    <span class="gia-cu">7000 đ</span>
+                    <span class="gia-moi">5000 đ</span>
+                </div>
+
+                <button class="nut">THÊM VÀO GIỎ</button>
+            </div>
+
+            <div class="giamgia">-29%</div>
+        </div>
+
+        <!-- SẢN PHẨM 4 -->
+        <div class="sanpham">
+            <div class="anh">
+                <img src="Screenshot 2026-05-10 090751.png">
+            </div>
+
+            <div class="chitiet">
+                <div class="ten">Classico 04</div>
+
+                <div>
+                    <span class="gia-cu">7000 đ</span>
+                    <span class="gia-moi">5000 đ</span>
+                </div>
+
+                <button class="nut">THÊM VÀO GIỎ</button>
+            </div>
+
+            <div class="giamgia">-29%</div>
+        </div>
+
+    </div>
+
+</body>
